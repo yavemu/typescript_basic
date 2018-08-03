@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Información sobre TypeScript</title>
-    <script src="fun_flecha.js" charset="utf-8"></script>
+    <script src="destructuracion.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>TYPESCRIPT</h1>
@@ -67,5 +67,19 @@
       <p>El operador <b>=></b> equivale al return  </p>
       <p>Si despues del operador <b>=></b> tiene mas de una linea se debe usar corchetes <b>{ muchas lineas }</b> </p>
       <p>Las funciones flechas son muy utiles cuando tenemos fuciones dentro de otras funciones, especialmente por el uso del <b>this</b> dentro de los diferentes scope </p>
+
+      <hr>
+      <h2>Destructuración de Objetos</h2>
+      <p>Destructurar es obtener en variables los valores de sus propiedades</p>
+      <p>La estructura es: <b>let {propiedades} = objeto</b> </p>
+      <p>Las propiedades estan dentro de corchetes y separadas por una coma {prop4, prop6, ...., prop1}</p>
+      <p>Las propiedades se les puede cambiar el nombre (alias) al momento de destructurarlas <b>let {prop1:nombre, prop5:apellidos} = objeto</b></p>
+
+      <hr>
+      <h2>Destructuración de Arreglos</h2>
+      <p>Destructurar es obtener en variables los valores del arreglo, se obtienen en forma secuencial</p>
+      <p>La estructura es: <b>let [posicion0, posicion1, ..... posicionN] = arreglo</b> </p>
+      <p>Si solo queremos el valor de la posicion 2 se debe dejar espacio vacio separado por comas hasta llegar a la posicion deseada: [ , ,posicion2] = arreglo</b> </p>
+
   </body>
 </html>
