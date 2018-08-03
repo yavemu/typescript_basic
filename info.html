@@ -5,12 +5,28 @@
     <title>Información sobre TypeScript</title>
   </head>
   <body>
-    <h1>Comandos a ejecutar desde consola:</h1>
+    <h1>TYPESCRIPT</h1>
+    <hr>
+
+    <h2>Comandos a ejecutar desde consola:</h2>
     <ul>
       <li> <b>tsc xxx / tsc xxx.ts</b> Compilar archivo .js </li>
       <li> <b>tsc xxx -w:</b> Al agregar -w indicamos que quede en modo escucha para que compile dicho archivo automaticamente cada que identifique un cambio </li>
       <li> <b>tsc -init:</b> Con este comando creamos el archivo tsconfig.json en el cual podemos inicializar un proyecto TypeScript. </li>
       <li> <b>tsc -w:</b> Con este comando podemos indicar desde la consola que TypeScript este en modo escucha, cuando se modifique cualquier archivo .ts compilara su correspondiente .js </li>
     </ul>
+
+    <hr>
+    <h2>Variables let y Constantes const</h2>
+    <h3>Variables LET</h3>
+    <p>Al usar TypeScript, lo que debemos hacer es reemplazar <b>var</b> por <b>let</b> al instanciar una variable.  </p>
+    <p>Las variables let en un archivo .ts sirve para evitar sobreescribir valores de variables en un scope diferente.</p>
+    <p>Si TypeScript identifica variables con el mismo nombre en diferente scope(bloque) al momento de compilar renombra la variable en el archivo .js</p>
+    <h3>Constantes CONT</h3>
+    <p>Al igual que let, const es una palabra reservada solo para TypeScript.</p>
+    <p>Por convención las constantes siempre se escriben en mayuscula. <b>ej. const GENERO = "Femenino"</b> </p>
+    <p>Las constantes al momento de instanciarla se le debe asignar el valor. </p>
+    <p>Una vez se inicializa o ejecuta el script, su valor no se puede cambiar.</p>
+    <p>Al momento de compilar, el archivo .js renombra el nombre de la variable en caso de encontrar variables constantes en diferentes scope con el mimsmo nombre (lo mismo que let) </p>
   </body>
 </html>
