@@ -28,5 +28,13 @@
     <p>Las constantes al momento de instanciarla se le debe asignar el valor. </p>
     <p>Una vez se inicializa o ejecuta el script, su valor no se puede cambiar.</p>
     <p>Al momento de compilar, el archivo .js renombra el nombre de la variable en caso de encontrar variables constantes en diferentes scope con el mimsmo nombre (lo mismo que let) </p>
+
+    <hr>
+    <h2>Tipos de datos</h2>
+    <p>TypeScript identifica que tipo de dato tiene una variable, esto lo realiza al momento de asignarle el primer valor a dicha variable.</p>
+    <p>TypeScript nos muestra un mensaje de advertencia cuando se cambia el tipo de dato de una variable, si lo quisieramos dejar asi no hay problema al momento de compilar y generar el .js</p>
+    <p>La forma correcta de instanciar una variable es indicando que tipo de dato permitira: <b>ej. let nombre:string = "Hola Mundo"</b> </p>
+    <p>Los tipos de datos mas comunes son: <br>let xxxx:<b>string</b> <br>let xxxx:<b>number</b> <br>let xxxx:<b>boolean</b> <br>let xxxx:<b>date</b></p>
+    <p>TypeScript tambien tiene otros tipos de datos especiales, como lo es el tipo de dato <b>Any</b>, esto significa que una variable de tipo any permite cualquier valor (Con esto evitamos el mensaje de advertencia que genera TypeScript) </p>
   </body>
 </html>
