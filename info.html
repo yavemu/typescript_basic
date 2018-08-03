@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Información sobre TypeScript</title>
-    <script src="promesas.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>TYPESCRIPT</h1>
@@ -65,14 +64,14 @@
       <p>Los parametros van dentro de <b>()</b> ejemplo: <b>let nombreFuncion = (a,b) => a+b </b> </p>
       <p>Si la funcion tiene un solo parametro se puede omitir los parentesis, si no tiene parametros se ponen los parentesis vacios</p>
       <p>El operador <b>=></b> equivale al return  </p>
-      <p>Si despues del operador <b>=></b> tiene mas de una linea se debe usar corchetes <b>{ muchas lineas }</b> </p>
+      <p>Si despues del operador <b>=></b> tiene mas de una linea se debe usar llaves <b>{ muchas lineas }</b> </p>
       <p>Las funciones flechas son muy utiles cuando tenemos fuciones dentro de otras funciones, especialmente por el uso del <b>this</b> dentro de los diferentes scope </p>
 
       <hr>
       <h2>Destructuración de Objetos</h2>
       <p>Destructurar es obtener en variables los valores de sus propiedades</p>
       <p>La estructura es: <b>let {propiedades} = objeto</b> </p>
-      <p>Las propiedades estan dentro de corchetes y separadas por una coma {prop4, prop6, ...., prop1}</p>
+      <p>Las propiedades estan dentro de llaves y separadas por una coma {prop4, prop6, ...., prop1}</p>
       <p>Las propiedades se les puede cambiar el nombre (alias) al momento de destructurarlas <b>let {prop1:nombre, prop5:apellidos} = objeto</b></p>
 
       <hr>
@@ -82,7 +81,7 @@
       <p>Si solo queremos el valor de la posicion 2 se debe dejar espacio vacio separado por comas hasta llegar a la posicion deseada: [ , ,posicion2] = arreglo</b> </p>
 
       <hr>
-      <h2>Promesas</h2>
+      <h2>Promesas (Promise)</h2>
       <p>Las promesas permiten ejecutar una tarea (codigo o funcion) cuando una tarea asincrona es terminada</p>
       <p>Las promesas tiene una estructura que requiere dos parametros que indican que hacer cuando se <b>cumple la condicion</b> y cuando <b>genera error</b> </p>
       <p>Estos 2 parametros por convención se conocen como (<b>resolve</b> y <b>reject</b>) </p>
@@ -95,7 +94,18 @@
         <b>}</b>
       </p>
       <p>Para llamar una promesa se utiliza el metodo <b>then</b> de la promesa el cual espera de igual forma 2 parametros (correco , incorrecto) </p>
-      
+
+      <hr>
+      <h2>Interfaz (Interface)</h2>
+      <p>Una interface es como una plantilla similar a una clase con propiedades que se utiliza para indicar que se debe cumplir su formato, se usa como si fuera un tipo de dato</p>
+      <p>Para crear una interfaz se utiliza la palabra reservada <b>interface</b> y el nombre que le queremos dar, luego dentro de llaves van las propiedades </p>
+      <p><b>interface</b> Xmen {<br>
+        nombre:string,<br>
+        poder:string<br>
+      }</p>
+      <p>Su funcionalidad se ve al validar el contenido de la variable asignandole como tipo de dato el nombre de la interfaz que creamos</p>
+      <p>function enviarMision(<b>xmen:Xmen</b>){ console.log("Enviar a mision "+<b>xmen.nombre</b>) }</p>
 
   </body>
+  <script src="interface.js" charset="utf-8"></script>
 </html>
