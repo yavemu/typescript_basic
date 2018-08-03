@@ -2,15 +2,22 @@
 class Avenger {
 
     // Instanciamos las propiedades que queremos para en la Clase
-    nombre:string = "Antman";
-    equipo:string;
-    nombreReal:string;
+    nombre:string = undefined;
+    equipo:string = undefined;
+    nombreReal:string = undefined;
 
-    puedePelear:boolean;
-    peleasGanadas:number;
+    puedePelear:boolean = false;
+    peleasGanadas:number = 0;
+
+    constructor(nombre:string, equipo:string, nombreReal:string){
+      // asignar a la propiedad de la clase el valor del parametro del constructor
+      this.nombre = nombre;
+      this.equipo = equipo;
+      this.nombreReal = nombreReal;
+    }
 }
 
 // declarar variable que instancie la clase
-let antman:Avenger = new Avenger();
+let antman:Avenger = new Avenger("Antman","cap","Scott Lang");
 
 console.log(antman);
