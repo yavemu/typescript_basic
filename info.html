@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Información sobre TypeScript</title>
-    <script src="destructuracion.js" charset="utf-8"></script>
+    <script src="promesas.js" charset="utf-8"></script>
   </head>
   <body>
     <h1>TYPESCRIPT</h1>
@@ -80,6 +80,22 @@
       <p>Destructurar es obtener en variables los valores del arreglo, se obtienen en forma secuencial</p>
       <p>La estructura es: <b>let [posicion0, posicion1, ..... posicionN] = arreglo</b> </p>
       <p>Si solo queremos el valor de la posicion 2 se debe dejar espacio vacio separado por comas hasta llegar a la posicion deseada: [ , ,posicion2] = arreglo</b> </p>
+
+      <hr>
+      <h2>Promesas</h2>
+      <p>Las promesas permiten ejecutar una tarea (codigo o funcion) cuando una tarea asincrona es terminada</p>
+      <p>Las promesas tiene una estructura que requiere dos parametros que indican que hacer cuando se <b>cumple la condicion</b> y cuando <b>genera error</b> </p>
+      <p>Estos 2 parametros por convención se conocen como (<b>resolve</b> y <b>reject</b>) </p>
+      <p>La estructura base es:</p>
+      <p>
+        let prom1 = <b>new Promise(function(resolve, reject){</b><br>
+           ________ Aqui va el codigo donde requerido el cual indica si es resolve o reject<br>
+           ________ <b>resolve()</b> Se hace el llamado a resolve() cuando es exitoso<br>
+           ________ <b>reject()</b> Se hace el llamado a reject() cuando salio algo mal <br>
+        <b>}</b>
+      </p>
+      <p>Para llamar una promesa se utiliza el metodo <b>then</b> de la promesa el cual espera de igual forma 2 parametros (correco , incorrecto) </p>
+      
 
   </body>
 </html>
